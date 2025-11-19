@@ -1,0 +1,54 @@
+[
+  {
+    "co": "KMB",
+    "route": "74B",
+    "bound": "O",
+    "service_type": "1",
+    "orig_en": "KOWLOON BAY",
+    "orig_tc": "九龍灣",
+    "orig_sc": "九龙湾",
+    "dest_en": "TAI PO CENTRAL",
+    "dest_tc": "大埔中心",
+    "dest_sc": "大埔中心",
+    "data_timestamp": "2020-11-29T11:40:00+08:00"
+  },
+  {
+    "co": "KMB",
+    "route": "74B",
+    "bound": "I",
+    "service_type": "1",
+    "orig_en": "TAI PO CENTRAL",
+    "orig_tc": "大埔中心",
+    "orig_sc": "大埔中心",
+    "dest_en": "KWUN TONG FERRY",
+    "dest_tc": "觀塘碼頭",
+    "dest_sc": "观塘码头",
+    "data_timestamp": "2020-11-29T11:40:00+08:00"
+  },
+  {
+    "co": "KMB",
+    "route": "1",
+    "bound": "O",
+    "service_type": "1",
+    "orig_en": "CHUK YUEN ESTATE",
+    "orig_tc": "竹園邨",
+    "orig_sc": "竹园邨",
+    "dest_en": "STAR FERRY",
+    "dest_tc": "尖沙咀碼頭",
+    "dest_sc": "尖沙咀码头",
+    "data_timestamp": "2020-11-29T11:40:00+08:00"
+  },
+  {
+    "co": "KMB",
+    "route": "1",
+    "bound": "I",
+    "service_type": "1",
+    "orig_en": "STAR FERRY",
+    "orig_tc": "尖沙咀碼頭",
+    "orig_sc": "尖沙咀码头",
+    "dest_en": "CHUK YUEN ESTATE",
+    "dest_tc": "竹園邨",
+    "dest_sc": "竹园邨",
+    "data_timestamp": "2020-11-29T11:40:00+08:00"
+  }
+]

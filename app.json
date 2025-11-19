@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "HK Bus Tracker",
+    "slug": "hk-bus-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#007AFF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hkbus.tracker",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs your location to find nearby bus stops and show accurate bus arrival times."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#007AFF"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.hkbus.tracker",
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow HK Bus Tracker to use your location to find nearby bus stops."
+        }
+      ]
+    ]
+  }
+}

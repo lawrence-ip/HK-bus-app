@@ -67,15 +67,95 @@ The app requires the following permissions:
 
 ## API Integration
 
-The app is designed to integrate with a bus ETA API. The API endpoint will be configured in the services layer.
+The app is currently using **mock data** for development. To integrate real bus ETA data:
+
+1. See [API_INTEGRATION.md](API_INTEGRATION.md) for detailed integration instructions
+2. Update the `BusApiService` class in `src/services/busApiService.ts`
+3. Configure your API endpoint URL
+4. Map API responses to the app's data types
+
+## Quick Start
+
+For a quick guide to get started, see [QUICKSTART.md](QUICKSTART.md)
+
+## Current Features
+
+### Home Screen
+- Displays nearby bus stops using GPS location
+- Shows distance to each stop
+- Pull-to-refresh functionality
+- Sorted by proximity
+
+### ETA Screen
+- Shows all buses and minibuses arriving at a selected stop
+- Real-time countdown timers
+- Color-coded by service type (Bus/Minibus)
+- Auto-refreshes every 30 seconds
+- Manual refresh via pull-down
+
+### Location Service
+- Automatic permission requests
+- GPS-based location tracking
+- Distance calculation using Haversine formula
+- Error handling for permission denied/location unavailable
 
 ## Development
 
-Built with:
-- React Native
-- Expo
-- TypeScript
-- expo-location (for GPS functionality)
+### Built with:
+- **React Native** - Cross-platform mobile framework
+- **Expo** - Development platform and toolchain
+- **TypeScript** - Type-safe development
+- **expo-location** - GPS and location services
+
+### Technologies Used:
+- React Hooks (useState, useEffect, useCallback)
+- FlatList with RefreshControl
+- SafeAreaView for device compatibility
+- StyleSheet for styling
+
+## Testing
+
+### On Physical Device (Recommended)
+1. Install Expo Go from App Store/Play Store
+2. Run `npm start`
+3. Scan QR code with your camera (iOS) or Expo Go (Android)
+4. Grant location permissions
+
+### Mock Data
+The app includes mock data for testing:
+- 5 Hong Kong bus stops (Central, Admiralty, Causeway Bay, TST, Mong Kok)
+- Sample bus and minibus routes
+- Randomized ETA times (2-12 minutes)
+
+## Troubleshooting
+
+**Location not working:**
+- Ensure location services are enabled
+- Grant location permissions to Expo Go
+- Try restarting the app
+
+**Build issues:**
+```bash
+npm start -- --clear  # Clear cache
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## Future Enhancements
+
+- Integration with real Hong Kong bus APIs
+- Route search and filtering
+- Favorite stops
+- Route maps
+- Push notifications
+- Offline mode with cached data
+- Multi-language support (English, 繁體中文, 简体中文)
 
 ## License
 
